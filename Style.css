@@ -65,8 +65,16 @@ ul li a{
 
     text-decoration: none;
     font-weight: 500;
-
-    
-    
+    transition: background .2s;
 }
+
+/* pseudo-selector*/
+
+ul li a:hover {
+    background: rgba (255, 255, 255, 5.05);
+    border: 1.5px solid white;
+}
+
+
+
  
