@@ -8,16 +8,21 @@ function toggleMode() {
     //substituir a imagem
     if(html.classList.contains('light')) {
         // se tiver light mode, adiconar a image light
-        img.setAttribute('src,' './assets/avatar light.png')
-      
+        img.setAttribute('src', './assets/avatar light.png')
      } else{
-        html.classList.add('light')
+        //se tiver sem light mode, manter a imagem normal
+         img.setAttribute('src', './assets/avatar Gabriel.png')
      }
-    
+
+
+     
+    if(html.classList.contains('light')){
+
+        img.setAttribute('alt', "Foto do Gabriel em um parque em um dia ensolarado")
+    } else{
+        img.setAttribute('alt', "Foto do Gabriel em um parque, utilizando casado preto.")
+    }
+
 }
 
-//pegar a tag img
-
-// se tiver light mode, adiconar a image light
-//substituir a imagem
-//se tiver sem light mode, manter a imagem normal
+    
